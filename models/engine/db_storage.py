@@ -11,6 +11,7 @@ from models.place import Place
 from models.review import Review
 from os import getenv
 
+
 class DBStorage():
     ''' Class definition for DBStorage '''
     __engine = None
