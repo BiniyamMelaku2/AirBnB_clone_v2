@@ -25,7 +25,7 @@ Write a script that starts a Flask web application:
 
 * Your web application must be listening on 0.0.0.0, port 5000
 * Routes:
-   o  /: display “Hello HBNB!”
+    +  /: display “Hello HBNB!”
 
 * You must use the option strict_slashes=False in your route definition
 ```
@@ -47,9 +47,8 @@ Write a script that starts a Flask web application:
 
 * Your web application must be listening on 0.0.0.0, port 5000
 * Routes:
-   o  /: display “Hello HBNB!”
-
-   o  /hbnb: display “HBNB”
+   +  /: display “Hello HBNB!”
+   +  /hbnb: display “HBNB”
 
 * You must use the option strict_slashes=False in your route definition
 ```
@@ -70,11 +69,10 @@ Write a script that starts a Flask web application:
 
 * Your web application must be listening on 0.0.0.0, port 5000
 * Routes:
-```
-  o  /: display “Hello HBNB!”
-  o  /hbnb: display “HBNB”
-  o  /c/<text>: display “C ” followed by the value of the text variable (replace underscore _ symbols with a space )
-```
+
+   +  /: display “Hello HBNB!”
+   +  /hbnb: display “HBNB”
+   +  /c/<text>: display “C ” followed by the value of the text variable (replace underscore _ symbols with a space )
 * You must use the option strict_slashes=False in your route definition
 ```
 @ubuntu:~/AirBnB_v2$ python3 -m web_flask.2-c_route
@@ -101,13 +99,12 @@ Write a script that starts a Flask web application:
 
 * Your web application must be listening on 0.0.0.0, port 5000
 * Routes:
-```
- o  /: display “Hello HBNB!”
- o  /hbnb: display “HBNB”
- o  /c/<text>: display “C ”, followed by the value of the text variable (replace underscore _ symbols with a space )
- o  /python/(<text>): display “Python ”, followed by the value of the text variable (replace underscore _ symbols with a space )
-     * The default value of text is “is cool”
-```
+   +  /: display “Hello HBNB!”
+   +  /hbnb: display “HBNB”
+   +  /c/<text>: display “C ”, followed by the value of the text variable (replace underscore _ symbols with a space )
+   +  /python/(<text>): display “Python ”, followed by the value of the text variable (replace underscore _ symbols with a space )
+   * The default value of text is “is cool”
+
 * You must use the option strict_slashes=False in your route definition
 ```
 @ubuntu:~/AirBnB_v2$ python3 -m web_flask.3-python_route
@@ -455,7 +452,7 @@ Enter password:
 In another tab:
 
 ```
-e@ubuntu:~$ curl 0.0.0.0:5000/states ; echo ""
+@ubuntu:~$ curl 0.0.0.0:5000/states ; echo ""
 <!DOCTYPE html>
 ```
 
